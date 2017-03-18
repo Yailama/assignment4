@@ -1,30 +1,3 @@
-install.packages("dplyr",
-                 repos=c("http://rstudio.org/_packages", "http://cran.rstudio.com"))
-
-
-install.packages("readr",
-            repos=c("http://rstudio.org/_packages", "http://cran.rstudio.com"))
-
-
-install.packages("graphics",
-                 repos=c("http://rstudio.org/_packages", "http://cran.rstudio.com"))
-
-install.packages("tidyr",
-                 repos=c("http://rstudio.org/_packages", "http://cran.rstudio.com"))
-
-
-install.packages("maps",
-                 repos=c("http://rstudio.org/_packages", "http://cran.rstudio.com"))
-
-
-#'
-#'
-#'
-#'
-#'
-#'
-#'
-#'
 #' Load csv data
 #' This function checks whether data (in CSV format) exists in current woring directory, and if "yes",
 #' loads it into workspace. The progress printed in console can be switched off by assigning
