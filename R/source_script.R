@@ -68,7 +68,7 @@ make_filename <- function(year) {
 #'  fars_read_years(years=seq(from=2011, to=2015))}
 #'
 #'
-#' @importFrom dplyr %>%
+#' @importFrom magrittr %>%
 #' @importFrom dplyr mutate
 #' @importFrom dplyr select
 #'
