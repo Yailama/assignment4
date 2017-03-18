@@ -13,7 +13,7 @@
 #' @examples
 #' \dontrun{data<-fars_read(file.choose())
 #' data<-fars_read(filename="foo.csv")
-#' data<-fars_read(filename="foo.csv", progress=FALSE)
+#' data<-fars_read(filename="foo.csv", progress=FALSE)}
 #'
 #' @importFrom dplyr tbl_df
 #' @importFrom readr read_csv
@@ -42,8 +42,7 @@ fars_read <- function(filename) {
 #' @return This function returns object of class "character" with the constructed file name
 #'
 #' @examples
-#'  \dontrun{filename<-make_filename(year=2012)
-#' filename<-make_filename(year=2012)}
+#'  \dontrun{filename<-make_filename(year=2012)}
 #'
 #' @export
 make_filename <- function(year) {
@@ -68,8 +67,6 @@ make_filename <- function(year) {
 #' fars_read_years(years=c(2011,2012,2013))
 #'  fars_read_years(years=seq(from=2011, to=2015))}
 #'
-#' @examples fars_read_years(years=c(2011,2012,2013))
-#' @examples fars_read_years(years=seq(from=2011, to=2015))
 #'
 #' @importFrom dplyr %>%
 #' @importFrom dplyr mutate
