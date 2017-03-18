@@ -26,8 +26,8 @@ loads it into workspace. The progress printed in console can be switched off by 
 \code{progress = FALSE}.
 }
 \examples{
-data<-fars_read(file.choose())
+\dontrun{data<-fars_read(file.choose())
 data<-fars_read(filename="foo.csv")
-data<-fars_read(filename="foo.csv", progress=FALSE)
+data<-fars_read(filename="foo.csv", progress=FALSE)}
 
 }

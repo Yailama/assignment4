@@ -11,9 +11,9 @@
 #' Otherwise it stops and notifies that file does not exist.
 #'
 #' @examples
-#' data<-fars_read(file.choose())
+#' \dontrun{data<-fars_read(file.choose())
 #' data<-fars_read(filename="foo.csv")
-#' data<-fars_read(filename="foo.csv", progress=FALSE)
+#' data<-fars_read(filename="foo.csv", progress=FALSE)}
 #'
 #' @importFrom dplyr tbl_df
 #' @importFrom readr read_csv
@@ -42,7 +42,7 @@ fars_read <- function(filename) {
 #' @return This function returns object of class "character" with the constructed file name
 #'
 #' @examples
-#' filename<-make_filename(year=2012)
+#' \dontrun{filename<-make_filename(year=2012)}
 #'
 #' @export
 make_filename <- function(year) {
@@ -63,8 +63,8 @@ make_filename <- function(year) {
 #' month and year is returned. In case of absence of the requested .csv file to import, list value for it is NULL
 #' and warning message is produced.
 #'
-#' @examples fars_read_years(years=c(2011,2012,2013))
-#' @examples fars_read_years(years=seq(from=2011, to=2015))
+#' @examples \dontrun{fars_read_years(years=c(2011,2012,2013))
+#'  fars_read_years(years=seq(from=2011, to=2015))}
 #'
 #' @importFrom dplyr %>%
 #' @importFrom dplyr mutate
@@ -97,8 +97,9 @@ fars_read_years <- function(years) {
 #' @return Data frame with each subsisting years (from output list of \code{\link{fars_read_years}} )
 #'  in columns and number of observation is returned by each  month (in rows).
 #'
-#' @examples fars_summarize_years(years=c(2011,2012,2013))
-#' @examples fars_summarize_years(years=seq(from=2011, to=2015))
+#' @examples \dontrun{
+#' fars_summarize_years(years=c(2011,2012,2013))
+#' fars_summarize_years(years=seq(from=2011, to=2015))}
 #'
 #' @importFrom dplyr %>%
 #' @importFrom dplyr bind_rows
@@ -129,8 +130,9 @@ fars_summarize_years <- function(years) {
 #' If there is such a state number in data, but there is no observations, nothing is plotted (with the printed message
 #' about it) . Finally, if there are observations for specified state number, they are plotted on a map.
 #'
-#' @examples fars_map_state(1, 2011)
-#' @examples fars_map_state(2, 2013)is missing name/title. Skipping
+#' @examples \dontrun{
+#' fars_map_state(1, 2011)
+#' fars_map_state(2, 2013)}
 #'
 #' @importFrom dplyr filter
 #' @importFrom maps map
