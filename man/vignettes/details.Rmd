@@ -1,0 +1,66 @@
+---
+title: "How to use this package"
+author: "Amaliya Akopyan"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Suppose your data is stored in tables by year, with the name pattern "accident_2011.csv.bz2", "accident_2012.csv.bz2", "accident_2013.csv.bz2" etc. Use function \code{fars_read_years} to read all these files you need by assigning a vector of years.
+
+```{r,  "fars_read_years", messages = FALSE, echo = TRUE, eval=FALSE}
+fars_read_years(years=seq(from=2011, to=2015))
+```
+
+
+If you prefer the other way to import data, you can just create a file name with the same pattern, using 
+```{r "make_filename", messages = FALSE, echo = TRUE, eval=FALSE}
+filename<-make_filename(year=2012)
+```
+
+
+You can also read .csv file with other name by using:
+```{r "fars_read", messages = FALSE, echo = TRUE, eval=FALSE}
+fars_read(file.choose())
+```
+
+To not only import files, but also get summary information of how many observation occurs for each year, use \code{fars_summarize_years} with the same input, as \code{fars_read_years} function:
+
+You can also read .csv file with other name by using:
+```{r "fars_summarize_years", messages = FALSE, echo = TRUE, eval=FALSE}
+fars_summarize_years(years=c(2011,2012,2013))
+```
+
+The result should look like this:
+
+| MONTH| 2013| 2014| 2015|
+|-----:|----:|----:|----:|
+|     1| 2230| 2168| 2368|
+|     2| 1952| 1893| 1968|
+|     3| 2356| 2245| 2385|
+|     4| 2300| 2308| 2430|
+|     5| 2532| 2596| 2847|
+|     6| 2692| 2583| 2765|
+|     7| 2660| 2696| 2998|
+|     8| 2899| 2800| 3016|
+|     9| 2741| 2618| 2865|
+|    10| 2768| 2831| 3019|
+|    11| 2615| 2714| 2724|
+|    12| 2457| 2604| 2781|
+
+
+Finally, get plot of the result, use \code{fars_map_state} with specifyed state number and year.
+
+```{r "fars_map_state", messages = FALSE, echo = TRUE, eval=FALSE}
+fars_map_state(1, 2015)
+```
+
+![2015th year, state code:1](Plot1.png)
+
+![2015th year, state codes:1-15](Plot2.png)
+
+> "He who gives up [code] safety for [code] speed deserves neither."
+([via](https://twitter.com/hadleywickham/status/504368538874703872))
