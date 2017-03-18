@@ -8,6 +8,9 @@ This function uses the  \code{\link{fars_read_years}} output (list, containing m
 \usage{
 fars_summarize_years(years)
 }
+\arguments{
+\item{years}{A parameter which identifies which years are used to search and read files}
+}
 \value{
 Data frame with each subsisting years (from output list of \code{\link{fars_read_years}} )
  in columns and number of observation is returned by each  month (in rows).

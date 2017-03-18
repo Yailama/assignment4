@@ -8,6 +8,9 @@ function. Then it  selects year and month from each imported files and store it 
 \usage{
 fars_read_years(years)
 }
+\arguments{
+\item{years}{A parameter which identifies which years are used to search and read files}
+}
 \value{
 List of dataframes, where each data frame corresponds to initial .csv file and have two columns:
 month and year is returned. In case of absence of the requested .csv file to import, list value for it is NULL
