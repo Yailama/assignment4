@@ -22,8 +22,7 @@ This file uses the only value of a year to import csv files having names, genera
 function. Then it  selects year and month from each imported files and store it an a list.
 }
 \examples{
- \dontrun{
 fars_read_years(years=c(2011,2012,2013))
-fars_read_years(years=seq(from=2011, to=2015))}
+fars_read_years(years=seq(from=2011, to=2015))
 
 }

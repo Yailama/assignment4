@@ -21,8 +21,7 @@ This function uses the  \code{\link{fars_read_years}} output (list, containing m
  provide with summary information of how many observation occurs for each year.
 }
 \examples{
-\dontrun{
 fars_summarize_years(years=c(2011,2012,2013))
-fars_summarize_years(years=seq(from=2011, to=2015))}
+fars_summarize_years(years=seq(from=2011, to=2015))
 
 }
