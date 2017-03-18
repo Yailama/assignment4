@@ -10,4 +10,4 @@ This package has 5 exported functions:
 -   fars\_summarize\_years --- based on previous functions, provides summary of all used data
 -   fars\_map\_state --- plots results on a map
 
-[![Travis-CI Build Status](https://travis-ci.org/.svg?branch=master)](https://travis-ci.org/)
+[![Travis-CI Build Status](https://travis-ci.org/Yailama/assignment4.svg?branch=master)](https://travis-ci.org/Yailama/assignment4)
