@@ -20,6 +20,7 @@ This function make character name using existing pattern and year, so final name
 becomes "accident_2012.csv.bz2 "
 }
 \examples{
-filename<-make_filename(year=2012)
+\dontrun{
+filename<-make_filename(year=2012)}
 
 }
