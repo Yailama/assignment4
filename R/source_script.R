@@ -29,7 +29,6 @@ fars_read <- function(filename) {
 }
 
 
-
 #' File Naming
 #' This function make character name using existing pattern and year, so final name for year=2012
 #' becomes "accident_2012.csv.bz2 "
