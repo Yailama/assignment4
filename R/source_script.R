@@ -11,7 +11,7 @@
 #' Otherwise it stops and notifies that file does not exist.
 #'
 #' @examples
-#' \dontrun{data<-fars_read(file.choose())
+#' \dontrun{
 #' data<-fars_read(filename="foo.csv")
 #' data<-fars_read(filename="foo.csv", progress=FALSE)}
 #'
