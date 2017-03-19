@@ -85,7 +85,6 @@ fars_read_years <- function(years) {
 }
 
 
-
 #' Summarizig years
 #' This function uses the  \code{\link{fars_read_years}} output (list, containing months and years data) as input to
 #'  provide with summary information of how many observation occurs for each year.
