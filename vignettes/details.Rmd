@@ -58,9 +58,9 @@ Finally, get plot of the result, use \code{fars_map_state} with specifyed state 
 fars_map_state(1, 2015)
 ```
 
-![2015th year, state code:1](Plot1.png)
+![2015th year, state code:1](plot1.png)
 
-![2015th year, state codes:1-15](Plot2.png)
+![2015th year, state codes:1-15](plot2.png)
 
 > "He who gives up [code] safety for [code] speed deserves neither."
 ([via](https://twitter.com/hadleywickham/status/504368538874703872))
