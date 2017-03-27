@@ -19,5 +19,4 @@ Imports: dplyr,
     maps,
     readr,
     tidyr,
-    graphics,
-    testthat
+    graphics
