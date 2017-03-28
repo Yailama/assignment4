@@ -17,6 +17,7 @@
 #'
 #' @importFrom dplyr tbl_df
 #' @importFrom readr read_csv
+#' @importFrom readr progress
 #'
 #' @export
 fars_read <- function(filename) {
