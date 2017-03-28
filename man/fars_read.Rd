@@ -11,9 +11,6 @@ fars_read(filename)
 }
 \arguments{
 \item{filename}{A character string with the name of csv file that is looked for in current directory.}
-
-\item{progress}{Logical parameter that identifies whether progress of csv loading should be
-printed in R console.}
 }
 \value{
 This function returns table if specified csv file exists in working directory.
