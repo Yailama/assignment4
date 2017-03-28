@@ -4,8 +4,6 @@
 #' \code{progress = FALSE}.
 #'
 #' @param filename A character string with the name of csv file that is looked for in current directory.
-#' @param progress Logical parameter that identifies whether progress of csv loading should be
-#' printed in R console.
 #'
 #' @return This function returns table if specified csv file exists in working directory.
 #' Otherwise it stops and notifies that file does not exist.
@@ -17,7 +15,6 @@
 #'
 #' @importFrom dplyr tbl_df
 #' @importFrom readr read_csv
-#' @importFrom readr progress
 #'
 #' @export
 fars_read <- function(filename) {
